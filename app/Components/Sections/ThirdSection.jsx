@@ -4,9 +4,9 @@ import Image from 'next/image';
 import dr from '../../../public/images/Rectangle 53.png'
 const ThirdSection = () => {
     return (
-        <div className="flex justify-center items-center md:h-[90vh] header-bg">
+        <div className="flex justify-center items-center md:h-[90vh] header-bg  p-10">
             <div className="md:flex">
-                <div className="space-y-6 md:w-[19vw] mr-20">
+                <div className="space-y-6 md:w-[19vw] mr-20 text-center w-full mb-10">
                     <h2 className="text-3xl lg:text-4xl font-bold text-gray-800">
                         About The Clinic
                     </h2>
