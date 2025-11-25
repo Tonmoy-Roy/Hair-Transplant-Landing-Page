@@ -4,6 +4,7 @@ import Image from 'next/image';
 import man from '../../../public/images/man.png'
 import leftman from '../../../public/images/Rectangle 54.png'
 import rightman from '../../../public/images/Rectangle 56.png'
+import Button from '../Reusable/Button';
 const FirstSection = () => {
     return (
         <div className="">
@@ -48,10 +49,7 @@ const FirstSection = () => {
                     </div>
 
                     <div className="pt-4">
-                        <button className="group relative px-8 py-4 bg-gradient-to-r from-purple-600 to-pink-600 text-white font-semibold rounded-full shadow-lg hover:shadow-xl transform hover:scale-105 transition-all duration-300">
-                            <span className="relative z-10">Book Consultation</span>
-                            <div className="absolute inset-0 bg-gradient-to-r from-purple-700 to-pink-700 rounded-full opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
-                        </button>
+                        <Button></Button>
                     </div>
                 </div>
             </div>
