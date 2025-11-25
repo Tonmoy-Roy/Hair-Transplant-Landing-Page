@@ -1,14 +1,14 @@
 "use client"
 import React, { useState, useEffect } from 'react';
 
-const Carousel = ({ 
-  items, 
-  autoPlay = true, 
+const Carousel = ({
+  items,
+  autoPlay = true,
   interval = 3000,
   showIndicators = true,
   className = "",
   itemClassName = "",
-  renderItem 
+  renderItem
 }) => {
   const [currentSlide, setCurrentSlide] = useState(0);
 
@@ -37,15 +37,15 @@ const Carousel = ({
   return (
     <div className={`relative ${className}`}>
       {/* Carousel Container */}
-      <div className="overflow-hidden">
-        <div 
-          className="flex duration-500"
+      <div className="overflow-hidden w-full">
+        <div
+          className="flex transition-transform ease-in-out duration-500"
           style={{ transform: `translateX(-${currentSlide * 100}%)` }}
         >
           {items.map((item, index) => (
             <div
               key={index}
-              className={`w-full flex-shrink-0 ${itemClassName}`}
+              className={`w-full flex-shrink-0 flex justify-center ${itemClassName}`}
             >
               {renderItem(item, index)}
             </div>
@@ -81,11 +81,10 @@ const Carousel = ({
             <button
               key={index}
               onClick={() => goToSlide(index)}
-              className={`w-3 h-3 rounded-full transition-all ${
-                index === currentSlide
+              className={`w-3 h-3 rounded-full transition-all ${index === currentSlide
                   ? 'bg-gray-700 w-8'
                   : 'bg-gray-400 hover:bg-gray-500'
-              }`}
+                }`}
               aria-label={`Go to slide ${index + 1}`}
             />
           ))}

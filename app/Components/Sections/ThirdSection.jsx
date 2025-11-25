@@ -6,8 +6,8 @@ const ThirdSection = () => {
     return (
         <div className="flex justify-center items-center md:h-[90vh] header-bg  p-10">
             <div className="md:flex">
-                <div className="space-y-6 md:w-[19vw] mr-20 text-center w-full mb-10">
-                    <h2 className="text-3xl lg:text-4xl font-bold text-gray-800">
+                <div className="space-y-6 md:w-[19vw] mr-20 text-center w-full mb-10 slide-in-left">
+                    <h2 className="text-3xl lg:text-4xl font-bold text-gray-800 slide-in-left">
                         About The Clinic
                     </h2>
 
@@ -32,7 +32,7 @@ const ThirdSection = () => {
                     </div>
                 </div>
 
-                <div className="relative">
+                <div className="relative slide-in-right">
                     <div className="relative rounded-3xl overflow-hidden shadow-2xl">
                         <Image
                             src={dr} 

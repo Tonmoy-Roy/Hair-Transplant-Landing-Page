@@ -7,42 +7,42 @@ const doctors = [
         name: "Dr. Ahmad Osman",
         title: "ABHRS Certified",
         specialty: "Hair Transplant Surgeon",
-        image: <Image src={dr1} alt='' />,
+        image: <Image src={dr1} alt='Dr. Ahmad Osman'/>,
         alt: "Dr. Ahmad Osman - ABHRS Certified"
     },
     {
         name: "Dr. Farid Bilal",
         title: "Hair Restoration Specialist",
         specialty: "FUE & FUT Expert",
-        image: <Image src={dr2} alt='' />,
+        image: <Image src={dr2} alt='Dr. Farid Bilal'  />,
         alt: "Dr. Farid Bilal - Hair Restoration Specialist"
     },
     {
         name: "Dr. Arif Aziz",
         title: "Medical Director",
         specialty: "Trichology & Hair Transplant",
-        image: <Image src={dr3} alt='' />,
+        image: <Image src={dr3} alt='Dr. Arif Aziz'  />,
         alt: "Dr. Arif Aziz - Medical Director"
     },
     {
         name: "Dr. Ahmad Osman",
         title: "ABHRS Certified",
         specialty: "Hair Transplant Surgeon",
-        image: <Image src={dr1} alt='' />,
+        image: <Image src={dr1} alt='Dr. Ahmad Osman'  />,
         alt: "Dr. Ahmad Osman - ABHRS Certified"
     },
     {
         name: "Dr. Farid Bilal",
         title: "Hair Restoration Specialist",
         specialty: "FUE & FUT Expert",
-        image: <Image src={dr2} alt='' />,
+        image: <Image src={dr2} alt='Dr. Farid Bilal'  />,
         alt: "Dr. Farid Bilal - Hair Restoration Specialist"
     },
     {
         name: "Dr. Arif Aziz",
         title: "Medical Director",
         specialty: "Trichology & Hair Transplant",
-        image: <Image src={dr3} alt='' />,
+        image: <Image src={dr3} alt='Dr. Arif Aziz'  />,
         alt: "Dr. Arif Aziz - Medical Director"
     },
 ]

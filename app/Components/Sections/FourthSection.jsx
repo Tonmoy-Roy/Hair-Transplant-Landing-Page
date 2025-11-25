@@ -7,43 +7,39 @@ import msam from '../../../public/images/msam.png'
 import sheraton from '../../../public/images/sheraton.png'
 import erufu from '../../../public/images/erufu.png'
 import msam2 from '../../../public/images/msam2.png'
+import { motion } from "framer-motion";
+
 const FourthSection = () => {
     return (
         <>
             <div className='md:h-[30vh] flex justify-center items-center bg-white p-10'>
                 <div>
-                    <p className='text-3xl lg:text-4xl font-bold text-gray-800 text-center mb-5'>Awards & reconition</p>
-                    <div className='flex flex-wrap justify-center gap-4 md:space-x-15'>
-                        <Image
-                            src={abhrs}
-                            alt=''
-                            className=''
-                        />
-                        <Image
-                            src={hilton}
-                            alt=''
-                            className=''
-                        />
-                        <Image
-                            src={msam}
-                            alt=''
-                            className=''
-                        />
-                        <Image
-                            src={sheraton}
-                            alt=''
-                            className=''
-                        />
-                        <Image
-                            src={erufu}
-                            alt=''
-                            className=''
-                        />
-                        <Image
-                            src={msam2}
-                            alt=''
-                            className=''
-                        />
+                    <p className='text-3xl lg:text-4xl font-bold text-gray-800 text-center mb-5 fade-in'>Awards & reconition</p>
+                    <div className='flex justify-center gap-4 md:space-x-15'>
+                        <div className="w-full overflow-hidden">  {/* Important fix */}
+                            {/* Add gap + prevent stretching */}
+                            {/* Smooth loop */}
+                            <motion.div
+                                className="flex items-center gap-10"
+                                animate={{ x: ["0%", "-50%"] }}
+                                transition={{
+                                    duration: 20,
+                                    ease: "linear",
+                                    repeat: Infinity
+                                }}
+                            >
+                                {[abhrs, hilton, msam, sheraton, erufu, msam2, abhrs, hilton, msam, sheraton, erufu, msam2]
+                                    .map((img, i) => (
+                                        <Image
+                                            key={i}
+                                            src={img}
+                                            alt=""
+                                            className="h-12 md:h-16 w-auto object-contain"  // responsive fix
+                                        />
+                                    ))}
+                            </motion.div>
+                        </div>
+
                     </div>
                 </div>
             </div>

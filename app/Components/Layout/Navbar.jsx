@@ -7,13 +7,13 @@ export default function Header() {
     const [isMenuOpen, setIsMenuOpen] = useState(false);
 
     return (
-        <header className="bg-white border-b border-gray-200 text-black">
+        <header className="bg-white  text-black">
             <div className="mx-auto md:px-20 px-5">
                 <div className="flex items-center justify-between h-20">
                     <Image
                         src={logo}
                         alt="Description of the"
-                        className='md:w-[10vw] md:h-[10vh]'
+                        className='md:w-[10vw] md:h-[10vh] '
                     />
 
                     <nav className="hidden md:flex items-center gap-8">
@@ -38,12 +38,13 @@ export default function Header() {
                         <a href="#contact" className=" hover:text-orange-600 transition-colors">
                             FAQ
                         </a>
-                        
+
                     </nav>
 
                     <div className="hidden md:flex items-center">
-                        <button className="px-6 py-2  hover:text-orange-600 font-medium transition-colors">
-                            Contact Us
+                        <button className="group relative px-3 py-1 bg-linear-to-r from-purple-600 to-pink-600 text-white font-semibold rounded-full shadow-lg hover:shadow-xl transform hover:scale-105 transition-all duration-300 cursor-pointer">
+                            <span className="relative z-10">Contact Us</span>
+                            <div className="absolute inset-0 bg-linear-to-r from-purple-700 to-pink-700 rounded-full opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
                         </button>
                     </div>
 
@@ -63,11 +64,11 @@ export default function Header() {
                 </div>
 
                 {isMenuOpen && (
-                    <div className="md:hidden py-4 border-t border-gray-200 text-center">
+                    <div className="md:hidden py-10 text-center">
                         <nav className="flex flex-col gap-4 border-2 rounded-lg border-black items-center">
                             <a
                                 href="#features"
-                                className="transition-colors py-2 border border-gray-300 rounded-lg w-60 mt-5 font-medium"
+                                className="transition-colors py-2 border border-gray-300 rounded-lg w-60 mt-10 font-medium"
                                 onClick={() => setIsMenuOpen(false)}
                             >
                                 Features

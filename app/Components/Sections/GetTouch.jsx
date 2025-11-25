@@ -5,10 +5,12 @@ import Button from '../Reusable/Button';
 const GetTouch = () => {
 
     const [openFaq, setOpenFaq] = useState(null);
-
+    const toggleFaq = (index) => {
+        setOpenFaq(openFaq === index ? null : index);
+    };
     return (
         <div className='bg-white p-10'>
-            <h2 className="text-3xl lg:text-4xl font-bold text-gray-800 text-center mb-12 lg:mb-16">
+            <h2 className="text-3xl lg:text-4xl font-bold text-gray-800 text-center mb-12 lg:mb-16 fade-in">
                 Get In Touch
             </h2>
 
@@ -20,6 +22,7 @@ const GetTouch = () => {
                             className="border border-gray-300 rounded-2xl overflow-hidden hover:border-gray-400 transition-colors duration-300"
                         >
                             <button
+                                onClick={() => toggleFaq(index)}
                                 className="w-full px-6 py-4 flex items-center justify-between text-left hover:bg-gray-50 transition-colors duration-200"
                             >
                                 <span className="text-gray-800 font-medium pr-4">
