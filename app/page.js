@@ -8,6 +8,7 @@ import SecondSection from "./Components/Sections/SecondSection";
 import SeventhSection from "./Components/Sections/SeventhSection";
 import SixthSection from "./Components/Sections/SixthSection";
 import ThirdSection from "./Components/Sections/ThirdSection";
+import WhyChoose from "./Components/Sections/WhyChoose";
 export default function Home() {
   return (
     <>
@@ -20,6 +21,7 @@ export default function Home() {
       <SixthSection></SixthSection>
       <SeventhSection></SeventhSection>
       <GetTouch></GetTouch>
+      <WhyChoose></WhyChoose>
       <Footer></Footer>
     </>
   );

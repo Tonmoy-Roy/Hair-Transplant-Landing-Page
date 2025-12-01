@@ -3,7 +3,7 @@ import React from 'react';
 
 const Footer = () => {
     return (
-        <div className=''>
+        <div className='min-h-screen'>
         </div>
     );
 };

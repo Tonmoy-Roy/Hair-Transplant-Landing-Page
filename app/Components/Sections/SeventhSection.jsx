@@ -20,8 +20,6 @@ const SeventhSection = () => {
             </p>
         </div>
     );
-
-
     return (
         <div className='flex justify-center items-center p-10 bg-white max-w-screen overflow-hidden'>
             <div>
