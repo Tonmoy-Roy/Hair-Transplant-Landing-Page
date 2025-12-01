@@ -4,6 +4,7 @@ import FifthSection from "./Components/Sections/FifthSection";
 import FirstSection from "./Components/Sections/FirstSection";
 import FourthSection from "./Components/Sections/FourthSection";
 import GetTouch from "./Components/Sections/GetTouch";
+import RightCandidate from "./Components/Sections/RightCandidate";
 import SecondSection from "./Components/Sections/SecondSection";
 import SeventhSection from "./Components/Sections/SeventhSection";
 import SixthSection from "./Components/Sections/SixthSection";
@@ -22,6 +23,7 @@ export default function Home() {
       <SeventhSection></SeventhSection>
       <GetTouch></GetTouch>
       <WhyChoose></WhyChoose>
+      <RightCandidate></RightCandidate>
       <Footer></Footer>
     </>
   );
