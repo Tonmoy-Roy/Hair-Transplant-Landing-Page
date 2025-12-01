@@ -15,26 +15,24 @@ const FourthSection = () => {
             <div className='md:h-[30vh] flex justify-center items-center bg-white p-10'>
                 <div>
                     <p className='text-3xl lg:text-4xl font-bold text-gray-800 text-center mb-5 fade-in'>Awards & reconition</p>
-                    <div className='flex justify-center gap-4 md:space-x-15'>
-                        <div className="w-full overflow-hidden">  {/* Important fix */}
-                            {/* Add gap + prevent stretching */}
-                            {/* Smooth loop */}
+                    <div className='flex justify-center gap-4'>
+                        <div className="w-full overflow-hidden"> 
                             <motion.div
-                                className="flex items-center gap-10"
-                                animate={{ x: ["0%", "-50%"] }}
+                                className="flex whitespace-nowrap"
+                                animate={{ x: ["0%", "-100%"] }}
                                 transition={{
-                                    duration: 20,
+                                    duration: 40,
                                     ease: "linear",
-                                    repeat: Infinity
+                                    repeat: Infinity,
                                 }}
                             >
-                                {[abhrs, hilton, msam, sheraton, erufu, msam2, abhrs, hilton, msam, sheraton, erufu, msam2]
+                                {[abhrs, hilton, msam, sheraton, erufu, msam2, abhrs, hilton, msam, sheraton, erufu, msam2,abhrs, hilton, msam, sheraton, erufu, msam2, abhrs, hilton, msam, sheraton, erufu, msam2,abhrs, hilton, msam, sheraton, erufu, msam2, abhrs, hilton, msam, sheraton, erufu, msam2]
                                     .map((img, i) => (
                                         <Image
                                             key={i}
                                             src={img}
                                             alt=""
-                                            className="h-12 md:h-16 w-auto object-contain"  // responsive fix
+                                            className="h-12 md:h-16"  // responsive fix
                                         />
                                     ))}
                             </motion.div>
