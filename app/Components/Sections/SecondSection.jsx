@@ -10,7 +10,7 @@ const SecondSection = () => {
         className="flex"
         animate={{ x: ["0%", "-100%"] }}
         transition={{
-          duration: 70,
+          duration: 150,
           ease: "linear",
           repeat: Infinity,
         }}

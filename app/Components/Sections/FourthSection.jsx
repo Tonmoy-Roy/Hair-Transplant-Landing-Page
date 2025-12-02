@@ -21,7 +21,7 @@ const FourthSection = () => {
                                 className="flex whitespace-nowrap"
                                 animate={{ x: ["0%", "-100%"] }}
                                 transition={{
-                                    duration: 40,
+                                    duration: 20,
                                     ease: "linear",
                                     repeat: Infinity,
                                 }}

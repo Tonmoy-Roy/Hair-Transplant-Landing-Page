@@ -29,6 +29,12 @@ body {
 .header-bg {
   background-color: #F2E9E9;
 }
+.footer-bg{
+  background-color: #D69E9E;
+}
+.btn-bg{
+  background-color: #982D70;
+}
 
 .animate-count {
   transition: all 4s ease-out;

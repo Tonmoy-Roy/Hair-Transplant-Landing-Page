@@ -32,7 +32,7 @@ const RightCandidate = () => {
                         </div>
 
                         <div className="pt-4">
-                            <button className="group px-8 py-3 bg-gradient-to-r from-purple-700 to-pink-700 text-white font-semibold rounded-lg shadow-lg hover:shadow-xl transform hover:scale-105 transition-all duration-300 flex items-center gap-2">
+                            <button className="group px-8 py-3 btn-bg text-white font-semibold rounded-lg shadow-lg hover:shadow-xl transform hover:scale-105 transition-all duration-300 flex items-center gap-2">
                                 <span>See our results</span>
                                 <svg className="w-5 h-5 group-hover:translate-x-1 transition-transform duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
@@ -52,7 +52,7 @@ const RightCandidate = () => {
                         </div>
 
                         <div className="bottom-6 transform -translate-x-1/2 left-6 translate-x-0 ">
-                            <button className="px-6 py-3 bg-gradient-to-r from-purple-700 to-pink-700 text-white font-semibold rounded-lg shadow-xl hover:shadow-2xl transform hover:scale-105 transition-all duration-300">
+                            <button className="px-6 py-3 btn-bg text-white font-semibold rounded-lg shadow-xl hover:shadow-2xl transform hover:scale-105 transition-all duration-300">
                                 Get a free consultation
                             </button>
                         </div>

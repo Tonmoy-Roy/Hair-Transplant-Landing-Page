@@ -17,34 +17,33 @@ export default function Header() {
                     />
 
                     <nav className="hidden md:flex items-center gap-8">
-                        <a href="#features" className=" hover:text-orange-600 transition-colors">
+                        <a href="#features" className="hover:text-[#9A4179] transition-colors">
                             Home
                         </a>
-                        <a href="#modules" className=" hover:text-orange-600 transition-colors">
+                        <a href="#modules" className=" hover:text-[#9A4179] transition-colors">
                             Meet Our Team
                         </a>
-                        <a href="#pricing" className=" hover:text-orange-600 transition-colors">
+                        <a href="#pricing" className=" hover:text-[#9A4179] transition-colors">
                             About Hair Loss
                         </a>
-                        <a href="#testimonial" className=" hover:text-orange-600 transition-colors">
+                        <a href="#testimonial" className=" hover:text-[#9A4179] transition-colors">
                             Our Services
                         </a>
-                        <a href="#contact" className=" hover:text-orange-600 transition-colors">
+                        <a href="#contact" className=" hover:text-[#9A4179] transition-colors">
                             Our Protocol
                         </a>
-                        <a href="#contact" className=" hover:text-orange-600 transition-colors">
+                        <a href="#contact" className=" hover:text-[#9A4179] transition-colors">
                             Blog
                         </a>
-                        <a href="#contact" className=" hover:text-orange-600 transition-colors">
+                        <a href="#contact" className=" hover:text-[#9A4179] transition-colors">
                             FAQ
                         </a>
 
                     </nav>
 
                     <div className="hidden md:flex items-center">
-                        <button className="group relative px-3 py-1 bg-linear-to-r from-purple-600 to-pink-600 text-white font-semibold rounded-full shadow-lg hover:shadow-xl transform hover:scale-105 transition-all duration-300 cursor-pointer">
-                            <span className="relative z-10">Contact Us</span>
-                            <div className="absolute inset-0 bg-linear-to-r from-purple-700 to-pink-700 rounded-full opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+                        <button className="group relative px-3 py-1 btn-bg text-white rounded shadow-lg hover:shadow-xl transform hover:scale-105 transition-all duration-300 cursor-pointer">
+                        <span className="relative z-10">Contact Us</span>
                         </button>
                     </div>
 
