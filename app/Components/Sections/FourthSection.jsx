@@ -12,11 +12,11 @@ import { motion } from "framer-motion";
 const FourthSection = () => {
     return (
         <>
-            <div className='md:h-[30vh] flex justify-center items-center bg-white p-10'>
+            <div className='md:h-[30vh] flex justify-center items-center bg-white'>
                 <div>
                     <p className='text-3xl lg:text-4xl font-bold text-gray-800 text-center mb-5 fade-in'>Awards & reconition</p>
                     <div className='flex justify-center gap-4'>
-                        <div className="w-full overflow-hidden"> 
+                        <div className="w-full overflow-hidden">
                             <motion.div
                                 className="flex whitespace-nowrap"
                                 animate={{ x: ["0%", "-100%"] }}
@@ -26,13 +26,13 @@ const FourthSection = () => {
                                     repeat: Infinity,
                                 }}
                             >
-                                {[abhrs, hilton, msam, sheraton, erufu, msam2, abhrs, hilton, msam, sheraton, erufu, msam2,abhrs, hilton, msam, sheraton, erufu, msam2, abhrs, hilton, msam, sheraton, erufu, msam2,abhrs, hilton, msam, sheraton, erufu, msam2, abhrs, hilton, msam, sheraton, erufu, msam2]
+                                {[abhrs, hilton, msam, sheraton, erufu, msam2, abhrs, hilton, msam, sheraton, erufu, msam2, abhrs, hilton, msam, sheraton, erufu, msam2, abhrs, hilton, msam, sheraton, erufu, msam2, abhrs, hilton, msam, sheraton, erufu, msam2, abhrs, hilton, msam, sheraton, erufu, msam2]
                                     .map((img, i) => (
                                         <Image
                                             key={i}
                                             src={img}
                                             alt=""
-                                            className="h-12 md:h-16"  // responsive fix
+                                            className="h-12 md:h-16"  
                                         />
                                     ))}
                             </motion.div>

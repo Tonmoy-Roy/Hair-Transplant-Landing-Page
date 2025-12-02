@@ -53,27 +53,6 @@ const Carousel = ({
         </div>
       </div>
 
-      {/* Navigation Arrows */}
-      {/* <button
-        onClick={goToPrev}
-        className="absolute left-4 top-1/2 transform -translate-y-1/2 bg-white/80 hover:bg-white rounded-full p-2 shadow-lg transition-all duration-200"
-        aria-label="Previous slide"
-      >
-        <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 19l-7-7 7-7" />
-        </svg>
-      </button>
-
-      <button
-        onClick={goToNext}
-        className="absolute right-4 top-1/2 transform -translate-y-1/2 bg-white/80 hover:bg-white rounded-full p-2 shadow-lg transition-all duration-200"
-        aria-label="Next slide"
-      >
-        <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
-        </svg>
-      </button> */}
-
       {/* Indicators */}
       {showIndicators && (
         <div className="flex justify-center gap-2 mt-6">
@@ -82,8 +61,8 @@ const Carousel = ({
               key={index}
               onClick={() => goToSlide(index)}
               className={`w-3 h-3 rounded-full transition-all ${index === currentSlide
-                  ? 'bg-gray-700 w-8'
-                  : 'bg-gray-400 hover:bg-gray-500'
+                ? 'bg-gray-700 w-8'
+                : 'bg-gray-400 hover:bg-gray-500'
                 }`}
               aria-label={`Go to slide ${index + 1}`}
             />
