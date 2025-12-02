@@ -12,6 +12,7 @@ import SixthSection from "./Components/Sections/SixthSection";
 import ThirdSection from "./Components/Sections/ThirdSection";
 import WhyChoose from "./Components/Sections/WhyChoose";
 import Faqs from "./Components/Sections/Faqs";
+import CustomerSay from "./Components/Sections/CustomerSay";
 export default function Home() {
   return (
     <>
@@ -28,6 +29,7 @@ export default function Home() {
       <RightCandidate></RightCandidate>
       <PatientSay></PatientSay>
       <Faqs></Faqs>
+      <CustomerSay></CustomerSay>
       <Footer></Footer>
     </>
   );

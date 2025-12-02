@@ -6,18 +6,18 @@ const SeventhSection = () => {
 
     const renderTestimonial = (testimonial, index) => (
         <div className="bg-white rounded-2xl shadow-2xl p-6 lg:p-8 duration-300 
-                  mx-auto text-center w-[260px] sm:w-[300px] md:w-[350px]">
-                <div className=' mb-4'>
-                    {testimonial.image}
-                </div>
+                  mx-auto text-center md:w-[40vw] md:h-[50vh]">
+            <div className='flex justify-center items-center mb-4'>
+                {testimonial.image}
+            </div>
 
-                <div className="text-lg font-semibold text-gray-900">
-                    {testimonial.name}
-                </div>
+            <div className="text-lg font-semibold text-gray-900">
+                {testimonial.name}
+            </div>
 
-                <p className="text-gray-600 leading-relaxed">
-                    {testimonial.title}
-                </p>
+            <p className="text-gray-600 leading-relaxed">
+                {testimonial.title}
+            </p>
         </div>
     );
     return (
