@@ -1,12 +1,10 @@
-'use client'
+'use client';
 import React from 'react';
 import Carousel from '../Reusable/carousal';
-import doctors from '../Constants/DOCTORS'
+import doctors from '../Constants/DOCTORS';
 const SeventhSection = () => {
-
     const renderTestimonial = (testimonial, index) => (
-        <div className="bg-white rounded-2xl shadow-2xl p-6 lg:p-8 duration-300 
-                  mx-auto text-center md:w-[40vw] md:h-[50vh]">
+        <div className="bg-white rounded-2xl shadow-2xl p-6 lg:p-8 duration-300 mx-auto text-center md:w-[40vw] md:h-[50vh]">
             <div className='flex justify-center items-center mb-4'>
                 {testimonial.image}
             </div>

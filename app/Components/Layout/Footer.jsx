@@ -13,7 +13,7 @@ const Footer = () => {
     return (
         <div className='min-h-screen'>
             <div className="p-10 footer-bg">
-                <div className="max-w-6xl mx-auto mb-16">
+                <div className="max-w-5xl mx-auto mb-16">
                     <h2 className="text-4xl lg:text-5xl font-bold text-white text-center mb-8">
                         Contact Us
                     </h2>
