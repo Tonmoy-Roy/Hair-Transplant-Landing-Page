@@ -1,12 +1,13 @@
-"use client"
+"use client";
 import React from 'react';
 import Image from 'next/image';
 import patients from '../Constants/PATIENTS';
 import Carousel from '../Reusable/carousal';
-import before from '../../../public/images/Rectangle 58.png'
-import after from '../../../public/images/Rectangle 59.png'
+import before from '../../../public/images/Rectangle 58.png';
+import after from '../../../public/images/Rectangle 59.png';
 import { motion, useMotionTemplate, useMotionValue, useSpring } from "framer-motion";
 import { useRef } from "react";
+
 const SixthSection = () => {
     const StarIcon = () => (
         <svg className="w-5 h-5 fill-current text-yellow-400" viewBox="0 0 20 20">
@@ -15,7 +16,7 @@ const SixthSection = () => {
     );
 
     const renderTestimonial = (testimonial, index) => (
-        <div className="bg-white rounded-2xl shadow-lg p-6 lg:p-8 hover:shadow-xl transition-shadow duration-300 mx-auto md:w-[40vw] md:h-[40vh] text-center">
+        <div className="bg-white rounded-2xl shadow-lg p-6 lg:p-8 hover:shadow-xl transition-shadow duration-300 w-[265px] sm:w-[300px] md:w-[350px] md:h-[40vh] text-center">
             <div className="flex gap-1 mb-4 justify-center items-center">
                 {[...Array(testimonial.rating)].map((_, i) => (
                     <StarIcon key={i} />
@@ -56,9 +57,8 @@ const SixthSection = () => {
             const mouseX = e.clientX - rect.left;
             const mouseY = e.clientY - rect.top;
 
-            const rY = ((mouseX / width) - 0.5) * 28;     // rotate Y
-            const rX = ((mouseY / height) - 0.5) * -28;   // rotate X (inverted)
-
+            const rY = ((mouseX / width) - 0.5) * 28;    
+            const rX = ((mouseY / height) - 0.5) * -28;   
             x.set(rX);
             y.set(rY);
         };
@@ -83,10 +83,8 @@ const SixthSection = () => {
                     whileTap={{ scale: 0.98 }}
                     transition={{ type: "spring", stiffness: 300, damping: 25 }}
                 >
-                    {/* Glow effect */}
                     <div className="absolute -inset-2 rounded-3xl blur-xl opacity-0 group-hover:opacity-70 transition duration-700 pointer-events-none -z-10" />
 
-                    {/* Image container (lifted in 3D space) */}
                     <div
                         className="relative rounded-2xl overflow-hidden shadow-2xl bg-gray-100"
                         style={{ transform: "translateZ(50px)", transformStyle: "preserve-3d" }}
@@ -100,7 +98,6 @@ const SixthSection = () => {
                             style={{ transform: "translateZ(30px)" }}
                         />
 
-                        {/* Shine overlay */}
                         <div
                             className="absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity duration-500 pointer-events-none"
                             style={{
@@ -123,7 +120,6 @@ const SixthSection = () => {
 
             <div className="bg-white rounded-3xl shadow-xl p-8 lg:p-12 mb-12 lg:mb-16 max-w-5xl mx-auto">
                 <div className="grid md:grid-cols-2 gap-8 lg:gap-12">
-                    {/* BEFORE */}
                     <div className="space-y-6">
                         <h3 className="text-2xl md:text-3xl font-bold text-gray-900 text-center tracking-wider slide-in-left">
                             BEFORE
@@ -131,7 +127,6 @@ const SixthSection = () => {
                         <TiltImage src={before} alt="Before hair restoration" />
                     </div>
 
-                    {/* AFTER */}
                     <div className="space-y-6">
                         <h3 className="text-2xl md:text-3xl font-bold text-gray-900 text-center tracking-wider slide-in-right">
                             AFTER
@@ -145,8 +140,8 @@ const SixthSection = () => {
                 items={patients}
                 autoPlay={true}
                 interval={3000}
-                className="max-w-6xl mx-auto"
-                itemClassName="px-4"
+                className="md:w-[71vw] mx-auto"
+                itemClassName=""
                 renderItem={renderTestimonial}
             />
         </div>
