@@ -5,7 +5,7 @@ import customers from '../Constants/CUSTOMERS';
 import Carousel from '../Reusable/carousal';
 const CustomerSay = () => {
     const renderTestimonial = (testimonial, index) => (
-        <div className="bg-gray-50 rounded-2xl shadow-lg p-6 lg:p-8 hover:shadow-xl transition-shadow duration-300 mx-auto  w-[260px] sm:w-[300px] md:w-[350px] text-center">
+        <div className="bg-gray-50 rounded-2xl shadow-lg p-6 lg:p-8 hover:shadow-xl transition-shadow duration-300 mx-auto  w-[260px] sm:w-[300px] md:w-[350px] text-center  md:h-[40vh] mb-5 mt-3"> 
             <div className="border-b flex items-center gap-3 mb-3">
                 <div className="relative w-12 h-12 rounded-full overflow-hidden bg-gray-200 flex-shrink-0 mb-2">
                     {testimonial.avatar ? (
@@ -42,7 +42,7 @@ const CustomerSay = () => {
                     items={customers}
                     autoPlay={true}
                     interval={3000}
-                    className="max-w-6xl mx-auto"
+                    className="md:w-[76vw] mx-auto md:h-[50vh]"
                     itemClassName="px-4"
                     renderItem={renderTestimonial}
                 />

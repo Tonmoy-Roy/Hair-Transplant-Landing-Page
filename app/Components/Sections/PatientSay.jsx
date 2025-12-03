@@ -2,15 +2,15 @@
 import React, { useState } from 'react';
 import Image from 'next/image'
 import patients2 from '../Constants/PATIENTS2'
-import Carousel from '../Reusable/carousal';
+import PatientCarousal from './PatientCarousal';
 const PatientSay = () => {
     const StarIcon = () => (
-        <svg className="w-5 h-5 fill-current text-yellow-400" viewBox="0 0 20 20">
+        <svg className="w-4 h-4 fill-current" viewBox="0 0 20 20">
             <path d="M10 15l-5.878 3.09 1.123-6.545L.489 6.91l6.572-.955L10 0l2.939 5.955 6.572.955-4.756 4.635 1.123 6.545z" />
         </svg>
     );
     const renderTestimonial = (testimonial, index) => (
-        <div className="bg-white rounded-2xl shadow-lg p-6 lg:p-8 hover:shadow-xl transition-shadow duration-300 mx-auto  w-[260px] sm:w-[300px] md:w-[350px] md:h-[40vh] text-center">
+        <div className="bg-white rounded-2xl shadow-lg p-6 lg:p-8 hover:shadow-xl transition-shadow duration-300 mx-auto  w-[260px] sm:w-[300px] md:w-[350px] md:h-[30vh] text-center">
 
             <div className="flex items-center  mb-4 gap-4">
                 <div className="relative w-12 h-12 rounded-full overflow-hidden bg-gray-200 flex-shrink-0">
@@ -52,11 +52,11 @@ const PatientSay = () => {
                     What Our Patients Say
                 </h2>
 
-                <Carousel
+                <PatientCarousal
                     items={patients2}
                     autoPlay={true}
                     interval={3000}
-                    className="max-w-6xl mx-auto"
+                    className="max-w-4xl mx-auto md:h-[80vh]"
                     itemClassName="px-4"
                     renderItem={renderTestimonial}
                 />

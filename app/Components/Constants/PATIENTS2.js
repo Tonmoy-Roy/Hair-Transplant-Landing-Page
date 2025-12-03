@@ -26,6 +26,54 @@ const PATIENTS2 = [
         avatar: avatar4, // Add avatar image path
         rating: 5,
         text: "Excellent stuff,outstanding results"
+    },
+    {
+        name: "Mimi",
+        avatar: avatar1, // Add avatar image path
+        rating: 5,
+        text: "Great experience from start to finish"
+    },
+    {
+        name: "Rina",
+        avatar: avatar2, // Add avatar image path
+        rating: 5,
+        text: "The results are fantastic.Feeling confident now"
+    },
+    {
+        name: "Faiz",
+        avatar: avatar3, // Add avatar image path
+        rating: 5,
+        text: "From initial consultation to the post-op care.everything was handled with professionalism..I'm very satisfied with the outcome"
+    },
+    {
+        name: "Ray",
+        avatar: avatar4, // Add avatar image path
+        rating: 5,
+        text: "Excellent stuff,outstanding results"
+    },
+    {
+        name: "Mimi",
+        avatar: avatar1, // Add avatar image path
+        rating: 5,
+        text: "Great experience from start to finish"
+    },
+    {
+        name: "Rina",
+        avatar: avatar2, // Add avatar image path
+        rating: 5,
+        text: "The results are fantastic.Feeling confident now"
+    },
+    {
+        name: "Faiz",
+        avatar: avatar3, // Add avatar image path
+        rating: 5,
+        text: "From initial consultation to the post-op care.everything was handled with professionalism..I'm very satisfied with the outcome"
+    },
+    {
+        name: "Ray",
+        avatar: avatar4, // Add avatar image path
+        rating: 5,
+        text: "Excellent stuff,outstanding results"
     }
 ];
 export default PATIENTS2; 

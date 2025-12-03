@@ -16,7 +16,7 @@ const SixthSection = () => {
     );
 
     const renderTestimonial = (testimonial, index) => (
-        <div className="bg-white rounded-2xl shadow-lg p-6 lg:p-8 hover:shadow-xl transition-shadow duration-300 w-[265px] sm:w-[300px] md:w-[350px] md:h-[40vh] text-center">
+        <div className="bg-white rounded-2xl shadow-lg p-6 lg:p-8 hover:shadow-xl transition-shadow duration-300 w-[265px] sm:w-[300px] md:w-[350px] md:h-[40vh] text-center mb-5 mt-3">
             <div className="flex gap-1 mb-4 justify-center items-center">
                 {[...Array(testimonial.rating)].map((_, i) => (
                     <StarIcon key={i} />
